@@ -14,7 +14,7 @@ function page() {
         <div className='absolute inset-0 bg-gradient-to-r from-slate-900'/>
         <div className="container absolute mt-52 text-center ">
           <h1 className='text-white text-3xl font-bold'>Everyone deserves the life-changing impact of education</h1>
-          <p className='text-white text-xl'>Education is the bridge to a better future  and we'll help you every step of the way
+          <p className='text-white text-xl'>Education is the bridge to a better future  and we will help you every step of the way
           </p>
         </div>
       </div>

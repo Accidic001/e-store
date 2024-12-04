@@ -1,9 +1,7 @@
-import Image from 'next/image'
+
 import React from 'react'
-import artImg from "/public/img2.jpg"
 import Card2 from '@/components/card2'
 import Footer from '@/components/footer'
-import Contact from '@/components/contact'
 import Rate from '@/components/rate'
 
 function page() {

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
     <div>
       <nav className="flex justify-between items-center p-3 bg-blue-800">
         <div className="logo font-bold text-xl cursor-pointer text-blue-400">
-          <a href="/">e-Store</a>
+          <Link href="/">e-Store</Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -36,16 +37,16 @@ function Navbar() {
 
         {/* Menu Links (Visible on larger screens) */}
         <div className="hidden lg:flex space-x-3 text-blue-100">
-          <a href="/homePage" className="hover:text-black">Home</a>
-          <a href="/blog" className="hover:text-black">blog</a>
-          <a href="/about" className="hover:text-black">About us</a>
-          <a href="/courses" className="hover:text-black">Courses</a>
+          <Link href="/homePage" className="hover:text-black">Home</Link>
+          <Link href="/blog" className="hover:text-black">blog</Link>
+          <Link href="/about" className="hover:text-black">About us</Link>
+          <Link href="/courses" className="hover:text-black">Courses</Link>
         </div>
 
         {/* Login/Logout (Visible on larger screens) */}
         <div className="hidden lg:flex space-x-3 text-lime-100">
-          <a href="/" className="hover:text-black">Login</a>
-          <a href="/" className="hover:text-black">Logout</a>
+          <Link href="/" className="hover:text-black">Login</Link>
+          <Link href="/" className="hover:text-black">Logout</Link>
         </div>
       </nav>
 
@@ -53,12 +54,12 @@ function Navbar() {
       <div
         className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-blue-800 text-blue-100 p-3`}
       >
-        <a href="/homePage" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Home</a>
-        <a href="/blog" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">blog</a>
-        <a href="/courses" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Courses</a>
-        <a href="/about" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">About us</a>
-        <a href="/" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Login</a>
-        <a href="/" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Logout</a>
+        <Link href="/homePage" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Home</Link>
+        <Link href="/blog" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">blog</Link>
+        <Link href="/courses" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Courses</Link>
+        <Link href="/about" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">About us</Link>
+        <Link href="/" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Login</Link>
+        <Link href="/" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Logout</Link>
       </div>
     </div>
   );

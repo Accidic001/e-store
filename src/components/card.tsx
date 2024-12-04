@@ -1,6 +1,6 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import homeImg from "/public/home.jpg"
+
 
 
 interface CardProps{

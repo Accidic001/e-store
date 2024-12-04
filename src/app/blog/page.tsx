@@ -1,6 +1,5 @@
 import React from 'react'
 import artImg from "/public/img2.jpg"
-import Image from 'next/image'
 import Card from '@/components/card'
 import Contact from '@/components/contact'
 import Footer from '@/components/footer'

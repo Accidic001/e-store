@@ -40,7 +40,7 @@ export default function page() {
              from our affiliate network.
 
        We use Google Analytics to analyse the use of our website. Our analytics service provider generates statistical and other
-        information about website use by means of cookies. Our analytics service provider's privacy policy is available at: http://www.google.com/policies/privacy/.
+        information about website use by means of cookies. Our analytics service providers privacy policy is available at: http://www.google.com/policies/privacy/.
 
         Deleting cookies will have a negative impact on the usability of the site. If you block cookies, you will not be able to use all the features on our website.
                 </p>
