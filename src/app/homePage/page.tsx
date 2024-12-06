@@ -21,9 +21,9 @@ function homePage() {
           <Image src={homeImg} alt="home image " className='bg-cover bg-center ' fill={true} style={{ objectFit: "cover" }} />
         </div>
         <div className='absolute inset-0 bg-gradient-to-r from-slate-600'/>
-        <div className="container absolute mt-52 text-center ">
-          <h1 className='text-white text-3xl font-bold'>Hello User</h1>
-          <p className='text-white text-xl'>welcome back to e-store</p>
+        <div className="container flex justify-center items-center flex-col absolute  text-center ">
+          <h1 className='text-white text-xl md:text-6xl font-bold'>welcome back to e-store</h1>
+          <p className='text-white text-xl md:3xl'> The journey of thousand miles starts with a single step.</p>
         </div>
       </div>
 
