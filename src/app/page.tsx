@@ -14,12 +14,15 @@ export default function Home() {
             </div>
            
             <div className="intro-bt flex justify-center gap-3 pt-3 text-white">
+              <a href="/login">
               <button className="bg-blue-700 rounded px-2 py-1  hover:bg-white  hover:text-blue-600 ">SignIn</button>
+              </a>
+              <a href="/signup">
               <button className="bg-blue-700 rounded px-2 py-1  hover:bg-white hover:text-blue-600">SignOut</button>
+              </a>
             </div>
           </div>
           </div>
-          <Rate />
     </div> 
   );
 }

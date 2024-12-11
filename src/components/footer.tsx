@@ -6,7 +6,7 @@ function Footer() {
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"/>
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"/>
 
-<footer className="relative bg-blueGray-200 pt-8 pb-6">
+<footer className="relative bg-blueGray-200 pt-8 pb-6 w-full">
   <div className="container mx-auto px-4">
     <div className="flex flex-wrap text-left lg:text-left">
       <div className="w-full lg:w-6/12 px-4">
@@ -55,7 +55,7 @@ function Footer() {
                 <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Privacy Policy</a>
               </li>
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Contact Us</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -67,8 +67,8 @@ function Footer() {
       <div className="w-full md:w-4/12 px-4 mx-auto text-center">
         <div className="text-sm text-blueGray-500 font-semibold py-1">
           Copyright © <span id="get-current-year">2024</span>
-          <a href="https://www.creative-tim.com/product/notus-js" className="text-blueGray-500 hover:text-gray-800" target="_blank"/> Notus JS by
-          <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800"> Accidic Creativity</a>.
+          <a href="#" className="text-blueGray-500 hover:text-gray-800" target="_blank"/>  by
+          <a href="#" className="text-blueGray-500 hover:text-blueGray-800"> Accidic Creativity</a>.
         </div>
       </div>
     </div>

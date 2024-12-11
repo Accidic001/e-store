@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 function Rate() {
   // State to manage the active tab
   const [activeTab, setActiveTab] = useState("stats");
-
+ 
   // Function to handle tab change based on select dropdown
   const handleTabChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setActiveTab(e.target.value);
@@ -13,8 +13,8 @@ function Rate() {
   
 
   return (
-    <div className='py-6 px-10 bg-white'>
-      <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className='py-6 px-10 bg-white w-full'>
+      <div className="w-full bg-gray-800 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         {/* Mobile view select dropdown */}
         <div className="sm:hidden">
           <label className="sr-only">Select tab</label>
@@ -62,7 +62,7 @@ function Rate() {
         </ul>
 
         {/* Tab content */}
-        <div className="border-t border-gray-200 dark:border-gray-600">
+        <div className="border-t border-gray-200 dark:border-gray-600 ">
           <div className={`${activeTab === "stats" ? 'block' : 'hidden'} p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800`} role="tabpanel">
             {/* Statistics content */}
             <dl className="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
@@ -101,7 +101,7 @@ function Rate() {
                 <svg className="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                 </svg>
-                <span className="leading-tight">Dynamic reports and dashboards</span>
+                <span className="leading-tight">Dynamic reports and statistics</span>
               </li>
               {/* Additional services */}
             </ul>
@@ -111,7 +111,13 @@ function Rate() {
             <div id="accordion-flush">
               <h2 id="accordion-flush-heading-1">
                 <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-                  <span>What is Flowbite?</span>
+                  <span>What is e-store all about</span>
+                </button>
+                <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                  <span>knowledge is the key to success</span>
+                </button>
+                <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                  <span>educational purpose</span>
                 </button>
               </h2>
               {/* Additional FAQ items */}

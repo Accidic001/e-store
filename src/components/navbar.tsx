@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +12,12 @@ function Navbar() {
   return (
     <div>
       <nav className="flex justify-between items-center p-3 bg-blue-800">
-        <div className="logo font-bold text-xl cursor-pointer text-blue-400">
-          <Link href="/">e-Store</Link>
+        <div className="logo font-bold text-xl cursor-pointer text-blue-400 ">
+          <Link href="/" className='flex justify-center items-center'>
+          <span>
+          <Image className=" w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" width="200" height="100" alt="logo"/>
+          </span>
+          <span></span>e-Store</Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -45,8 +50,8 @@ function Navbar() {
 
         {/* Login/Logout (Visible on larger screens) */}
         <div className="hidden lg:flex space-x-3 text-lime-100">
-          <Link href="/" className="hover:text-black">Login</Link>
-          <Link href="/" className="hover:text-black">Logout</Link>
+          <Link href="/login" className="hover:text-black">Login</Link>
+          <Link href="/signup" className="hover:text-black">Logout</Link>
         </div>
       </nav>
 
@@ -58,8 +63,8 @@ function Navbar() {
         <Link href="/blog" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">blog</Link>
         <Link href="/courses" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Courses</Link>
         <Link href="/about" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">About us</Link>
-        <Link href="/" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Login</Link>
-        <Link href="/" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Logout</Link>
+        <Link href="/login" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Login</Link>
+        <Link href="/signup" className="block py-2 hover:text-blue-800 hover:bg-white hover:p-2 rounded">Logout</Link>
       </div>
     </div>
   );
