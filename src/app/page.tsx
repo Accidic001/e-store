@@ -1,6 +1,6 @@
 import Image from "next/image";
 import bgImage from "/public/intro.jpg"
-import Rate from "@/components/rate";
+
 
 export default function Home() {
   return (
